@@ -1,58 +1,31 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
 }
-.logo{
-   width: 140px;
-   cursor: pointer;
-}
-h3 {
-  font-size: 20px;
-  padding: 15px;
-  text-transform: uppercase;
-  text-align: left;
-  margin-left: 5px;
-  font-weight: 500;
-  line-height: 2.7;
-  letter-spacing: 0.8px;
-}
-.bookings{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: big;
-    text-align: left;
-}
 
-footer, h3{
-  display: inline-block;
-  font-size: 20px;
- 
-}
-
-footer {
-  margin-top: 50px;
-  text-align: center;
-  width: 100%;
-  bottom: 5px;
-   z-index: 5;
+.logo {
+  width: 140px;
+  cursor: pointer;
 }
 
 header {
   height: 95vh;
   width: 100%;
-  background-image: url(pictures/FrontPage.jpg);
+  background-image: url(FrontPage.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.menu-bar ul li{
+.menu-bar li {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
   position: relative;
 }
-.menu-bar ul li a{
+
+.menu-bar li a {
   text-decoration: none;
   color: #FFF;
   text-transform: uppercase;
@@ -60,7 +33,8 @@ header {
   padding: 0;
   font-family: sans-serif;
 }
-.menu-bar ul li::after{
+
+.menu-bar li::after {
   content: '';
   height: 3px;
   width: 0;
@@ -70,36 +44,29 @@ header {
   bottom: -10px;
   transition: 0.5s;
 }
-.menu-bar ul li:hover::after{
+
+.menu-bar li:hover::after {
   width: 100%;
 }
-.title-bar{
- width: 100%;
- margin: auto; 
- padding: 30px 0%;
- display: flex;
- align-items: center;
- justify-content: space-between;
-}
-.exclusives{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 30px;
-}
-.exclusives div img {
+
+.title-bar {
   width: 100%;
-  border-radius: 10px;
+  margin: auto;
+  padding: 30px 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .carousel {
   position: relative;
-  max-width:1000px;
+  max-width: 1000px;
   margin: 20px auto;
   overflow: hidden;
   border: 1px solid #ddd;
-  padding-top: 100px; 
+  padding-top: 100px;
   border: transparent;
 }
-
 
 .carousel-inner {
   display: flex;
@@ -139,17 +106,19 @@ header {
 .carousel-control.next {
   right: 10px;
 }
-.carousel-caption{
+
+.carousel-caption {
   text-align: center;
   padding-bottom: 100px;
 }
+
 .button-name {
   align-items: center;
   appearance: none;
-  background-color: white; 
+  background-color: white;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395A;
   cursor: pointer;
@@ -164,93 +133,99 @@ header {
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow .15s, transform .15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 18px;
- }
- 
- .button-name:focus {
+}
+
+.button-name:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
- }
- 
- .button-name:hover {
+}
+
+.button-name:hover {
   box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
- }
- 
- .button-name:active {
+}
+
+.button-name:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
- }
- .footer{
+}
+
+.footer {
   margin: 80px 0 10px;
   text-align: center;
- }
- .footer a{
+}
+
+.footer a {
   text-decoration: none;
-  color: #999; 
-  font-size: 22px;  
+  color: #999;
+  font-size: 22px;
   margin: 0 10px;
- }
- .footer hr{
-   background: #999;
-   height: 1px;
-   width: 100%;
-   border: 0;
-   margin: 20px 0;
- }
-.footer p{
+}
+
+.footer hr {
+  background: #999;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin: 20px 0;
+}
+
+.footer p {
   padding-bottom: 15px;
 }
-.menu-bar ul li .fa-bars{
+
+.menu-bar .fa-bars {
   display: none;
 
 }
-@media only screen and (max-width: 700px){
-  .logo{
+
+@media only screen and (max-width: 700px) {
+  .logo {
     position: fixed;
-    top: 4%;
-    left: 7%; 
+    top: 1%;
+    left: 0.8%;
   }
-  .menu-bar{
+
+  nav {
     position: fixed;
     top: 0;
     z-index: 100;
     display: inline-block;
-    width: 100%;
-    padding: 100px 7px 0;
+    width: 1000%;
+    padding: 100px 7% 0;
     background: gray;
     text-align: right;
     max-height: 100px;
     overflow: hidden;
     transition: max-height 0.5s;
   }
-  .menu-bar ul li{
-    margin: 10px 0; 
+
+  nav .menu-bar li {
+    margin: 10px 0;
     display: block;
+    text-align: right;
   }
-  .menu-bar ul li .fa-bars{
-   display: block;
-   position: fixed;
-   top: 4%;
-   right: 7%;
-   color: #FFF;
-   font-size: 28px;
+
+  nav .menu-bar .fa-bars {
+    display: block;
+    position: fixed;
+    top: 5%;
+    right: 7%;
+    color: #FFF;
+    font-size: 28px;
   }
-  .hidemenu{
+
+  .hidenmenu {
     max-height: 300px;
   }
-  .carousel{
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0 24px;
-    
-  }
-  .carousel-item img{
-    scroll-snap-align: start;
-    
+
+  .carousel-item img {
+    height: 130px;
   }
 }
