@@ -211,7 +211,6 @@ header {
     display: block;
     text-align: right;
   }
-
   nav .menu-bar .fa-bars {
     display: block;
     position: fixed;
@@ -226,6 +225,6 @@ header {
   }
 
   .carousel-item img {
-    height: 130px;
+    height: 110px;
   }
 }

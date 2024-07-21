@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJScooters</title>
+    <link href="Waterpark.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/881d715404.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <div class="title-bar">
+                <img src="logo.png" class="logo">
+                <div>
+                    <ul class="menu-bar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AllExcursions.html">Excursions</a></li>
+                        <li><a href="AllTours.html">Tours</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <i class="fas fa-bars" onclick="togglebtn()"></i>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="title">
+        <div class="title-overview">
+            <a>AquaPark Costa Teguise</a>
+            <a>Overview</a>
+        </div>
+        <div class="title-text">
+            <a>Enjoy a unique experience with our professional team in the biggest theme park in Lanzarote</a>
+            <a>With our water atractions, swimming pools, sun terraces, indoor painrball, virtual reality and a lot more surprises.</a>
+            <a>In between all these activities you can have a break and enjoy our gastro-nomic offer.</a>
+            <a>You will spend an unforgettable day.</a>
+        </div>
+        <div class="cost">
+            <a>Adult 26,00$</a>
+            <a>Children (4-12 years old) 18,00$</a>
+        </div>
+        <div class="dates">
+            <a>Every day from 10:00 am to 5:00 pm</a>
+        </div>
+
+    </div>
+
+    <div class="title">
+        <div class="title-overview">
+            <a>Aqualava Playa Blanca</a>
+            <a>Overview</a>
+        </div>
+        <div class="title-text">
+            <a>AQUALAVA waterpark lies in Playa Blanca to the south of Lanzarote, which stands out for its high-quality modern and sustainable facilities.</a>
+            <a>Our park is a true tribute to the unique spectacular scenery of our homeland – and to its main feature: VOLCANOES.</a>
+            <a>Aqualava is totally respectful with the environment and due to the fact we aspire to taking advantage of the whole year our pools are heated via geothermal energy</a>
+        </div>
+        <div class="cost">
+            <a>Adult 25,00$</a>
+            <a>Children (4-12 years old) 18,00$</a>
+        </div>
+        <div class="dates">
+            <a>Everyday from 10:00 am</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        var navBar = document.getElementById("navBar");
+    
+        function togglebtn() {
+            navBar.classList.toggle("hidenmenu");
+        }
+    </script>
+   
+    
+    
+
+</body>
+
+</html>

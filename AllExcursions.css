@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
 }
-
+html{
+  scroll-behavior: smooth; 
+}
 .logo {
   width: 140px;
   cursor: pointer;
@@ -13,7 +15,7 @@
 header {
   height: 95vh;
   width: 100%;
-  background-image: url(RanchoLogo.jpg);
+  background-image: url(Excursions.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -185,6 +187,19 @@ header {
 .menu-bar .fa-bars {
   display: none;
 
+}
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
 }
 
 /* General Styles */

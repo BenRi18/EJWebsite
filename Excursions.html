@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EJScooters</title>
     <link href="Excursions.css" rel="stylesheet">
@@ -15,9 +16,9 @@
                 <img src="logo.png" class="logo">
                 <div>
                     <ul class="menu-bar">
-                        <li><a href="MainPage.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AllExcursions.html">Excursions</a></li>
+                        <li><a href="AllTours.html">Tours</a></li>
                         <li><a href="#">Contact</a></li>
                         <i class="fas fa-bars" onclick="togglebtn()"></i>
                     </ul>
@@ -224,7 +225,14 @@
             <a>Wednesday</a>
         </div>
     </div>
-
+    <script src="script.js"></script>
+    <script>
+        var navBar = document.getElementById("navBar");
+    
+        function togglebtn() {
+            navBar.classList.toggle("hidenmenu");
+        }
+    </script>
 
 </body>
 
